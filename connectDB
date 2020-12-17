@@ -1,0 +1,26 @@
+pip install mysql-connector
+
+import mysql.connector
+
+config = {'user': 'insert_user',
+          'password': 'insert_password',
+          'host': '000.000.000.000',
+          'database': 'insert_database_name',
+          'raise_on_warnings': True}
+          
+          class mydatabase:
+
+        def __init__(self):
+            self.db = mysql.connector.connect(**config)
+            self.c = self.db.cursor()
+
+        def get_rows(self):
+            # a,b,c,d depence of your database structure and tables
+            # use the query example below, query needs parenthesis obligated
+
+            query=('SELECT {} FROM {} WHERE({}='{}')'.format("a","b","c","d"))
+            self.c.execute(query)
+            return self.c.fetchall()
+           
+db_connection=mydatabase()
+db_answer=db_connection.get_rows()
