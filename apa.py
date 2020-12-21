@@ -12,46 +12,39 @@ from kivymd.theming import ThemeManager
 Window.size = (450, 650)
 
 LoginPage = '''
-
-
-
 MDFloatLayout:
     MDLabel:
-        text: "You don't have any question right now"
+        text: "RRRRRAAHIIMIII"
         pos_hint: {"center_x": .5, "center_y": .60}
         size_hint_x: .7
         font_style: "H5"
         halign: "center"
         theme_text_color: "Custom"
-        text_color: 0, 0, 0, 1
+        text_color: 1, 0, 0, 1
 
     MDLabel:
-        text: "You must create a quest, create add button"
-        pos_hint: {"center_y": .5}
+        text: "nnnnoooongggbiiuttt"
+        pos_hint: {"center_y": .6}
         font_style: "Body1"
         halign: "center"
         theme_text_color: "Custom"
-        text_color: 0, 0, 0, 1
+        text_color: 1, 0, 0, 1
         password: True
 
     MDFloatingActionButton:
         icon: "plus"
-        pos_hint: {"center_x": .8, "center_y": .1}
+        pos_hint: {"center_x": .3, "center_y": .6}
         md_bg_color: app.theme_cls.primary_color
 
 
 
 
-
 '''
-
-
 class RQApp(MDApp):
     def build(self):
         self.theme_cls.primary_palette = "Cyan"
         login_page = Builder.load_string(LoginPage)
         return login_page
 
-
-if __name__ == "__main__":
+if __name__ == '__apa__':
     RQApp().run()
